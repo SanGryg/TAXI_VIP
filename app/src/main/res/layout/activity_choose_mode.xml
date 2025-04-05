@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseModeActivity">
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/taxi_splash" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:textSize="50dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="Taxi VIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/passengerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goToPassengerSignIn"
+            android:text="I'm a passenger"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_marginTop="200dp" />
+
+
+        <Button
+            android:id="@+id/driverButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goToDriverSignIn"
+            android:layout_marginTop="20dp"
+            android:text="I'm a driver"
+            android:textColor="#FF5722"
+            android:textSize="20sp"
+            app:backgroundTintMode="src_over" />
+
+    </LinearLayout>
+</FrameLayout>
